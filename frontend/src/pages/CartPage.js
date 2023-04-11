@@ -5,5 +5,4 @@ const CartPage = () => {
         <Cart />
     )
 }
-
 export default CartPage;
