@@ -28,7 +28,7 @@ export const CartContextProvider = (props) => {
     if (productsCount === 0) {
       return false;
     }
-    const inCart = cartProductsState.includes(product);
+    const inCart = cartProductsState.find((item) => item.id === product.id) ? true : false;
     return inCart;
   };
 
